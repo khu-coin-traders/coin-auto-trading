@@ -1,6 +1,0 @@
-export SECRET_KEY='django-insecure--m@$o*b5^-s!lwq-59!#uf=n=8jce1!g3v*xkrms2m!^+803lh'
-export DB_NAME='coin_trader'
-export DB_USER='root'
-export DB_PASSWORD='Hh468049893!@'
-export DB_HOST='localhost'
-export DB_PORT='3306'
