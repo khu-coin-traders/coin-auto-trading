@@ -1,10 +1,7 @@
 # CoinAutoTradingProject
-----------------------
-</br>
 
 
 ## 구현목록
--------------
  
 * 인증인가 + jwt
 * 사용자 DataBase
