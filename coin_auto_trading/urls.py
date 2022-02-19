@@ -13,11 +13,16 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
+
+
 from django.contrib import admin
 from django.urls import path, include
 
+# localhost 접속 후 맨처음 들어오는 곳
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('coin_main.urls')),
-    path('board/', include('coin_board.urls')),
+    # 주소에 따라 목적지 설정
+    path('admin/', admin.site.urls), # 관리자 페이지
+    path('', include('coin_main.urls')), # 메인화면 페이지
+    path('board/', include('coin_board.urls'), name = 'board'), # databases 페이지
 ]

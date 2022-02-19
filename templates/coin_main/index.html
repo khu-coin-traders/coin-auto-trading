@@ -1,1 +1,9 @@
-메인화면!
+메인화면! <br>
+
+<a href="{% url 'coin_databases' %}">회원 정보</a>
+
+<h2>비트코인 현재가격</h2>
+<li>순번 코인이름</li>
+{% for list in coin_current_price %}
+    <li>{{ forloop.counter }} &nbsp;&nbsp;&nbsp; {{ list }} </li>
+{% endfor %}
