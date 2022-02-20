@@ -1,0 +1,8 @@
+<h1>고객님의 가상화폐 보유자산 정보</h1></br>
+
+
+
+<h4>코인정보 개수 평균매수가</h4></br>
+{% for list in my_coin %}
+    {{ list.currency }}  {{ list.balance }}  {{ list.avg_buy_price }} </br>
+{% endfor %}
